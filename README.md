@@ -1,3 +1,14 @@
+# Marlin for Anycubic i3 Mega and Mega-S with trigorilla pro
+Download, build marlin normally with VSCode.
+Remove JP1 jumper and set SW1 jumper to USB mode. See this for pins: https://github.com/napyk/trigorilla-pro
+Flash .pio/build/trigorilla_pro/firmware.bin.
+Reboot your printer normally.
+
+Known Issue:
+Touchscreen is 180° flipped.
+
+
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
