@@ -1,7 +1,13 @@
 # Marlin for Anycubic i3 Mega and Mega-S with trigorilla pro
+
+Caution:Extruder config is for Mega-S or i3 Mega modded with a 3:! titan extruder.
+
 Download, build marlin normally with VSCode.
+
 Remove JP1 jumper and set SW1 jumper to USB mode. See this for pins: https://github.com/napyk/trigorilla-pro
+
 Flash .pio/build/trigorilla_pro/firmware.bin.
+
 Reboot your printer normally.
 
 Known Issue:
