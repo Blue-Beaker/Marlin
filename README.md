@@ -11,7 +11,7 @@ Flash .pio/build/trigorilla_pro/firmware.bin.
 Reboot your printer normally.
 
 Known Issue:
-Touchscreen is 180° flipped.
+~~Touchscreen is 180° flipped.~~ Fixed
 
 
 
