@@ -1398,7 +1398,7 @@
   // Correct the resolution if not using the stock TFT panel.
   //#define TOUCH_UI_320x240
   //#define TOUCH_UI_480x272
-  //#define TOUCH_UI_800x480
+  //define TOUCH_UI_800x480
 
   // Mappings for boards with a standard RepRapDiscount Display connector
   //#define AO_EXP1_PINMAP      // AlephObjects CLCD UI EXP1 mapping
