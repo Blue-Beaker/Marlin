@@ -648,7 +648,7 @@
     #define X_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
     #define Y_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
     #define Z_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
-    //#define Z_MIN_PROBE_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
+    #define Z_MIN_PROBE_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 
 /**
  * Stepper Drivers
@@ -843,7 +843,7 @@
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
  */
-//#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
+#define Z_MIN_PROBE_PIN PB10 // RX of the ESP-01 slot
 
 /**
  * Probe Type
@@ -906,7 +906,8 @@
 #endif
 
 // A probe that is deployed and stowed with a solenoid pin (SOL1_PIN)
-//#define SOLENOID_PROBE
+#define SOLENOID_PROBE
+#define SOL1_PIN PB11 //TX of the ESP-01 slot
 
 // A sled-mounted probe like those designed by Charles Bell.
 //#define Z_PROBE_SLED
@@ -1038,7 +1039,7 @@
 #define Z_PROBE_OFFSET_RANGE_MAX 20
 
 // Enable the M48 repeatability test to test probe accuracy
-//#define Z_MIN_PROBE_REPEATABILITY_TEST
+#define Z_MIN_PROBE_REPEATABILITY_TEST
 
 // Before deploy/stow pause for user confirmation
 //#define PAUSE_BEFORE_DEPLOY_STOW
@@ -1235,9 +1236,9 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
+#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
-#define MESH_BED_LEVELING
+//#define MESH_BED_LEVELING
 
 /**
  * Normally G28 leaves leveling disabled on completion. Enable
@@ -1342,12 +1343,12 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
-//#define LCD_BED_LEVELING
+#define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MESH_EDIT_Z_STEP  0.025 // (mm) Step size while manually probing Z axis.
   #define LCD_PROBE_Z_RANGE 4     // (mm) Z Range centered on Z_MIN_POS for LCD Z adjustment
-  //#define MESH_EDIT_MENU        // Add a menu to edit mesh points
+  #define MESH_EDIT_MENU        // Add a menu to edit mesh points
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
