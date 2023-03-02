@@ -987,12 +987,12 @@
 #endif
 
 #if DISABLED(KNUTWURST_BLTOUCH)
-    #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+    #define NOZZLE_TO_PROBE_OFFSET { -5, -16, -2 }
 #endif
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 30
+#define PROBING_MARGIN 5
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1124,7 +1124,7 @@
 
 // The size of the print bed
     #define X_BED_SIZE 225
-    #define Y_BED_SIZE 220
+    #define Y_BED_SIZE 225
     #define Z_BED_HEIGHT 210
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
@@ -1316,7 +1316,7 @@
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
   #define MESH_INSET 1              // Set Mesh bounds as an inset region of the bed
-  #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
+  #define GRID_MAX_POINTS_X 5      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   #define UBL_MESH_EDIT_MOVES_Z     // Sophisticated users prefer no movement of nozzle
