@@ -987,7 +987,7 @@
 #endif
 
 #if DISABLED(KNUTWURST_BLTOUCH)
-    #define NOZZLE_TO_PROBE_OFFSET { -5, -16, -2 }
+    #define NOZZLE_TO_PROBE_OFFSET { -5, -16, -2.5 }
 #endif
 
 // Most probes should stay away from the edges of the bed, but
@@ -1013,7 +1013,7 @@
  * A total of 3 or more adds more slow probes, taking the average.
  */
 #define MULTIPLE_PROBING  2
-#define EXTRA_PROBING     1
+// #define EXTRA_PROBING     1
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between
@@ -1031,7 +1031,7 @@
  */
 #define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow
 #define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
-#define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
+#define Z_CLEARANCE_MULTI_PROBE     2 // Z Clearance between multiple probes
 
     #define Z_PROBE_LOW_POINT          -2 // Farthest distance below the trigger-point to go before stopping
 
