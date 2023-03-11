@@ -745,7 +745,7 @@
 #if ENABLED(ASSISTED_TRAMMING)
 
   // Define positions for probing points, use the hotend as reference not the sensor.
-  #define TRAMMING_POINT_XY { {  9, 2 }, { 216,  2 }, { 216, 212 }, { 9, 212 } }
+  #define TRAMMING_POINT_XY { {  14, 18 }, { 221,  18 }, { 221, 228 }, { 14, 228 } }
 
   // Define positions names for probing points.
   #define TRAMMING_POINT_NAME_1 "Front-Left"
